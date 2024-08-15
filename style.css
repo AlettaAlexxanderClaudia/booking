@@ -3,28 +3,30 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color: #1bef34; /* Warna latar belakang */
+    background-color: #f4f4f4; /* Warna latar belakang */
 }
 
 .container {
     max-width: 600px;
     margin: auto;
-    background: #d0c00a; /* Warna latar belakang kontainer */
+    background: #bbbbbb; /* Warna latar belakang kontainer */
     padding: 20px;
+    border-radius: 20px ;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #000000;
 }
 
-p {
-    text-align: center;
+h5 {
+    color: #000000;
+    margin-bottom: -20px;
 }
 
 #input-section {
-    background-color: red; /* Warna latar belakang input section */
+    background-color: #bbbbbb;; /* Warna latar belakang input section */
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -35,7 +37,6 @@ p {
 }
 
 input[type="text"], input[type="tel"] {
-   
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #cccccc;
@@ -96,7 +97,3 @@ table tbody tr:nth-child(even) {
     padding: 10px 0;
 }
 
-h5{
-    color: #ffffff;
-    margin-bottom: -20px;
-}

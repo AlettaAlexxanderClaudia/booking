@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Antrian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistem Antrian</h1>
+       
+        
+        <div id="input-section">
+            <form id="booking-form">
+                <h5>Nama Anda</h5>
+                <input type="text" id="name" placeholder="ex : Biefo Verdinal" required>
+                <h5>Nomor Whatsapp </h5>
+                <input type="tel" id="phone" placeholder="ex : 08123456789" required>
+                <button type="submit">Booking Antrian</button>
+            </form>
+            <button id="toggle-queue">Sembunyikan Antrian</button>
+        </div>
+        
+        <div id="notifications-list"></div>
+    </div>
+
+    <div class="queue-table-container">
+        <div id="queue-table-section">
+            <table id="queue-table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Waiting</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Tabel data antrian akan dimasukkan di sini melalui JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

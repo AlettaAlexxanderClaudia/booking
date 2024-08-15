@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #1bef34; /* Warna latar belakang */
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #d0c00a; /* Warna latar belakang kontainer */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    text-align: center;
+}
+
+#input-section {
+    background-color: red; /* Warna latar belakang input section */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#input-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="tel"] {
+   
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #333; /* Warna tombol */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #555;
+}
+
+#toggle-queue {
+    margin-top: 20px;
+}
+
+table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: blue; /* Warna latar belakang tabel */
+}
+
+table th, table td {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    text-align: left;
+    color: #ffffff; /* Warna teks tabel */
+}
+
+table th {
+    background-color: #333; /* Warna header tabel */
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #444;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #555;
+}
+
+.notification {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 0;
+}
+
+h5{
+    color: #ffffff;
+    margin-bottom: -20px;
+}

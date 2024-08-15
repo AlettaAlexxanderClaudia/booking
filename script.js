@@ -17,13 +17,19 @@ function updateQueueInfo() {
     });
 }
 
-const BARBER_PHONE_NUMBER = '6289652264369'; // Nomor WhatsApp tujuan dalam format internasional
-const message = `Hallo, Saya\nNama pelanggan  : ${customer.name}\nNo.Antrian  : ${queueNumber}\nNo.Wa : ${customer.phone}`;
-const encodedMessage = encodeURIComponent(message);
-const url = `https://wa.me/${BARBER_PHONE_NUMBER}?text=${encodedMessage}`;
+function notifyBarber(customer, queueNumber) {
+    const message = `Hallo, Saya\nNama pelanggan  : ${customer.name}\nNo.Antrian  : ${queueNumber}\nNo.Wa : ${customer.phone}`;
+    const encodedMessage = encodeURIComponent(message);
+    const url = `https://wa.me/${BARBER_PHONE_NUMBER}?text=${encodedMessage}`;
 
-// Arahkan ke WhatsApp dengan pesan pra-isi
-window.open(url, '_blank');
+    // Check if the user is on a mobile device
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        // Open WhatsApp app on mobile devices
+        window.location.href = url;
+    } else {
+        // Open WhatsApp web on desktop devices
+        window.open(url, '_blank');
+    }
 }
 
 document.getElementById('booking-form').addEventListener('submit', function(e) {
